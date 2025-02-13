@@ -1,0 +1,100 @@
+/api/platforms:
+
+{
+    "platforms": [
+        {
+            "text": "Facebook Ads",
+            "value": "meta_ads"
+        },
+        {
+            "text": "Google Analytics",
+            "value": "ga4"
+        },
+        {
+            "text": "TikTok",
+            "value": "tiktok_insights"
+        }
+    ]
+}
+
+/api/accounts?platform=meta_ads:
+
+{
+    "accounts": [
+        {
+            "id": "1",
+            "name": "Jorginho",
+            "token": "cf76cf576fc567fc56fc5c6f5cf67fc6"
+        },
+        {
+            "id": "2",
+            "name": "Ricardo Rocha",
+            "token": "c48f4c8fc48fc4f8c4f5c45fc484c8f4"
+        },
+        {
+            "id": "3",
+            "name": "Ronaldão",
+            "token": "cf4486c7f674c6c7f4c746cf989c8f4c"
+        },
+        {
+            "id": "4",
+            "name": "Mauro Silva",
+            "token": "cf3ffc87cfc87c76fcf3f289f87c6ffc"
+        },
+        {
+            "id": "5",
+            "name": "Branco",
+            "token": "cf4cf6567cf76fc56c5f643cf988c9cf"
+        }
+    ],
+    "pagination": {
+        "current": 1,
+        "total": 3
+    }
+}
+
+/api/fields?platform=meta_ads:
+
+{
+    "fields": [
+        {
+            "text": "Clicks",
+            "value": "clicks"
+        },
+        {
+            "text": "Impressions",
+            "value": "impressions"
+        },
+        {
+            "text": "Spend",
+            "value": "spend"
+        },
+        {
+            "text": "Cost Per Click",
+            "value": "cpc"
+        },
+        {
+            "text": "Clickthrough Rate",
+            "value": "ctr"
+        }
+    ],
+    "pagination": {
+        "current": 1,
+        "total": 2
+    }
+}
+
+/api/insights?platform=meta_ads&account=1&token=cf76cf576fc567fc56fc5c6f5cf67fc6&fields=clicks,impressions,spend,cpc,ctr:
+
+{
+    "insights": [
+        {
+            "clicks": 886,
+            "cpc": 0.335,
+            "ctr": 0.386,
+            "id": 1,
+            "impressions": 2777,
+            "spend": 6915.93
+        }
+    ]
+}
